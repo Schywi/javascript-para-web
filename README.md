@@ -87,7 +87,7 @@ Ex:
 
 
 
-### Event bublling (borbulhamento de eventos)
+## Event bublling (borbulhamento de eventos)
 
 O elemento pai  também escuta a ação do elemento filho, por exemplo a tag <tbody> ouve o evento da tag <tr>. 
 
@@ -113,14 +113,14 @@ Ex: `event.target.parentNode()  ` : Seleciona o pai do alvo  que sofrerá a aç�
 **.setTimeout(function() {}, tempo(ms)):** O javascript  executa algo depois de certo tempo ,  ele "segura" a execução durante um certo tempo em milisegundos.
 
 
-## Noções de css:
+#### Noções de css:
 
 **opacity :** Adiciona opacidade.
 
 **transition:** Adiciona o tempo para ocorrer algo , uma transição de opacidade por exemplo.
 
 
-### Filtrando os pacientes da tabela
+## Filtrando os pacientes da tabela
 
 #### Noções de html:
 
@@ -153,9 +153,11 @@ Ex: `.addEventListener("load",function(){}) `
 array[i] : i = indice ou id do elemento do array
 
 
-**Expressão regular :** Tipo especial de texto que nos permite buscar um texto (palavra ou letra) dentro de um texto grande.
+### Expressão regular 
 
-### Criando expressão regular: 
+Tipo especial de texto que nos permite buscar um texto (palavra ou letra) dentro de um texto grande.
+
+**Criando expressão regular:**
 
 ` var expressão new RegExp(this.value , "i") `, 
 
