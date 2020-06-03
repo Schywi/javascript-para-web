@@ -1,10 +1,10 @@
-<img alt="GoStack" width="300" src="https://lh3.googleusercontent.com/TM-g_2L7u2p99kwg4IQeB-3352WfCq0vKXP4h5cOvISUlNll6-1WHu8t2B0oZdZKjkmp" />
+ <img alt="GoStack" align="center" width="1000" height="300"  src="https://lh3.googleusercontent.com/TM-g_2L7u2p99kwg4IQeB-3352WfCq0vKXP4h5cOvISUlNll6-1WHu8t2B0oZdZKjkmp" />
 
 <h3 align="center">
   Aula conceitual sobre Javascript para web
 </h3>
 
-## Funcionalidades desenvolvidas : 
+## Funcionalidades desenvolvidas :
 
 `should be able to search a paciente `: A aplicação deve permitir que a informação de um paciente seja buscada do formulario, e retorne os dados para o calculo do imc. 
 
@@ -28,40 +28,39 @@
 `Dica: use os conceitos de AJAX. `
 
 `should be able to validate the connection with a external server`: A aplicação deve validar e informar ao usuario caso  a conexão com o servidor não tenha sido bem sucedida.
-
 ## Conceitos abordados 
 
 ### Funções aprendidas
 
-.querySelector("tag") : Seleciona uma tag dentro do html.
-.querySelectorAll():  Seleciona todos os idenfiticadores com a classe dada, 
+**.querySelector("tag") :** Seleciona uma tag dentro do html.
+**.querySelectorAll() :**  Seleciona todos os idenfiticadores com a classe dada, 
 retorna um array com os elementos do HTML. 
 
-console.log(): Serve para visualizarmos o log de funções,variaveis da nossa aplicação.
+**console.log(): ** Serve para visualizarmos o log de funções,variaveis da nossa aplicação.
 
-addEventListener: Adiciona um "escutador" de eventos, que nos permite "capturar" uma ação do usuario e executar uma função quando essa ação for feita. 
+**.addEventListener :** Adiciona um "escutador" de eventos, que nos permite "capturar" uma ação do usuario e executar uma função quando essa ação for feita. 
 Ex: `.addEventListener("evento", function(){})`
 
 
-preventDefault(): Impede que uma configuração padrão ocorra,
+**.preventDefault() :** Impede que uma configuração padrão ocorra,
 no exemplo abaixo usamos ela para prevenir que a pagina seja carregada. 
 Ex: `event.preventDefault()`
 
-.appendChild(): Adiciona uma tag ou conteudo dentro de outro.
+**.appendChild() :** Adiciona uma tag ou conteudo dentro de outro.
 Ex: `pacientes.appendChild(pacienteTr)`
 
-.reset(): Reinicializa algo , no exemplo abaixo foi utilizado para zerar o conteudo do formulario ao recarregar a pagina ou adicionar um novo paciente. 
+**.reset() :** Reinicializa algo , no exemplo abaixo foi utilizado para zerar o conteudo do formulario ao recarregar a pagina ou adicionar um novo paciente. 
 Ex: `form.reset()`
 
-document. : Nós permite acessar o "mundo HTMl" apartir do "mundo Javascript".
-document.createElement() : Cria um elemento HTML como tags , apartir de um arquivo Javascript.
+**.document. :** Nós permite acessar o "mundo HTMl" apartir do "mundo Javascript".
+**.document.createElement():** Cria um elemento HTML como tags , apartir de um arquivo Javascript.
 
-.innerHTML: permite que você controle o html interno  de um elemento
+**.innerHTML :** permite que você controle o html interno  de um elemento
 , com essa propriedade podemos facilmente trocar todo o conteúdo de um elemento. 
 
-.textContent: Server para extrair o conteudo de uma tag.
+**.textContent :** Server para extrair o conteudo de uma tag.
 
-.forEach(function() {}): Executa uma função para cada item do array , devemos passar o item como parametro. 
+**.forEach(function() {}) :** Executa uma função para cada item do array , devemos passar o item como parametro. 
 
 Ex:
 ```
@@ -74,77 +73,80 @@ Ex:
         });
     }
 ```
-.remove(): Remove uma informação do html.
+**.remove() :** Remove uma informação do html.
 
 **OBS:** Para se acessar o dono do evento (quem sofreu o evento) ; usa-se "this" : significa  "a quem o evento esta atrelado".
 
 
-### Event bublling (borbulhamento de eventos):
+### Event bublling (borbulhamento de eventos)
 
 O elemento pai  também escuta a ação do elemento filho, por exemplo a tag <tbody> ouve o evento da tag <tr>. 
 
-Utilidade: Caso precise executar algo para cada elemento filho,  e mais eficiente delegar essa ação (função) ao pai . 
+**Utilidade:** Caso precise executar algo para cada elemento filho,  e mais eficiente delegar essa ação (função) ao pai . 
 
-Parâmetro event: È um objeto que tem a propriedade que retorna quem foi clicado.
+**Parâmetro event:** È um objeto que tem a propriedade que retorna quem foi clicado.
 
-.target: Especifica quem sofreu a ação.
+**.target:** Especifica quem sofreu a ação.
 
 Ex: `event.target `: Diz quem de fato foi clicado.
 
-#### Diferença entre o "this" e o "event.target" : 
+#### Diferença entre o "this" e o "event.target" 
 
-this : È o dono do evento.
+this :È o dono do evento.
 event.target: Mostra quem sofreu o evento.
 
-.parentNode() : Seleciona  o pai do elemento. 
+**.parentNode() :** Seleciona  o pai do elemento. 
 
 Ex: `event.target.parentNode()  ` : Seleciona o pai do alvo  que sofrerá a ação.
 
-.callback: È um nome especial dado a qualquer função que é executada em resposta a um evento qualquer.
+**.callback:** È um nome especial dado a qualquer função que é executada em resposta a um evento qualquer.
 
-.classList : Lista as classes.
+**.classList : Lista as classes.
 
-.classList.add() : Adiciona uma classe (CSS eu acho) a algo .
+**.classList.add() :** Adiciona uma classe,  que pode ser usada no CSS para estilização  por exemplo .
 
-.setTimeout(function() {}, tempo(ms)): O javascript  executa algo dps de certo tempo ,  ele "segura" a execução durante um certo tempo.
-
-
-## Noções de css: 
-
-opacity : Adiciona opacidade.
-transition: Adiciona o tempo para ocorrer algo , uma transição de opacidade por exemplo.
+**.setTimeout(function() {}, tempo(ms)):** O javascript  executa algo depois de certo tempo ,  ele "segura" a execução durante um certo tempo em milisegundos.
 
 
-### Filtrando os pacientes da tabela: 
+## Noções de css
 
-#### Noções de html: 
+**opacity :** Adiciona opacidade.
 
-input: Cria um espaço digitavel para se inserir informações.
-label:  Serve para dizer o nome do input (qual sua função/ para que serve).
+**transition:** Adiciona o tempo para ocorrer algo , uma transição de opacidade por exemplo.
 
-placeholder: Permite que adicione um texto dentro do input  para 
+
+### Filtrando os pacientes da tabela
+
+#### Noções de html
+
+**input :** Cria um espaço digitavel para se inserir informações.
+**label :**  Serve para dizer o nome do input (qual sua função/ para que serve).
+
+**placeholder :** Permite que adicione um texto dentro do input  para 
 informar ao usuario para que serve aquele input , esse texto
 sairá do input quando for digitado algo nele.
 
- **OBS:** Para capturar algo que o usuario digita usamos o input de dados: 
+ **OBS :** Para capturar algo que o usuario digita usamos o input de dados: 
 
-#### Tipos de eventos estudados: 
+#### Tipos de eventos estudados
 
-click : Evento ao clicar uma vez.
-dblclick: Evento ao dar dois cliques.
-input: Evento ao escrever algo , ativa para cada letra que vc digita
+**click :** Evento ao clicar uma vez.
+
+**dblclick :** Evento ao dar dois cliques.
+
+**input :** Evento ao escrever algo , ativa para cada letra que vc digita.
 Ex: `.addEventListener("input", function() {})`
 
-load: Evento caracteristico do XHR(XMLH) que escuta quando a resposta foi carregada:
+**load :** Evento caracteristico do XHR(XMLH) que escuta quando a resposta foi carregada:
 Ex: `.addEventListener("load",function(){}) ` 
 
 
-#### Noções de array : 
+#### Noções de array 
 
 array[i] : i = indice ou id do elemento do array
 
 
-Expressão regular : Tipo especial de texto que nos permite buscar um texto (palavra ou letra) dentro de um texto grande.
+**Expressão regular :** Tipo especial de texto que nos permite buscar um texto (palavra ou letra) dentro de um texto grande.
 
 ### Criando expressão regular: 
 
@@ -161,19 +163,19 @@ Para usar pedimos para a expressão regular testar a validação
 
 ### Introdução ao AJAX
 
-XMLHttpRequest() : È um  objeto do javascript responsavel por fazer requisições HTTP
+**XMLHttpRequest() :** È um  objeto do javascript responsavel por fazer requisições HTTP
 
-.open("requisição" , "endereço"): Abre a conexão com o endereço http ou local que agente queremos acessar.
+**.open("requisição" , "endereço") :** Abre a conexão com o endereço http ou local que agente queremos acessar.
 
-.send(): Envia a nossa requisição.
+**.send() :** Envia a nossa requisição.
 
-.responseText:  Imprime o texto da resposta da requisição
+**.responseText :** Imprime o texto da resposta da requisição
 
-typeof: Operador que retorna o tipo de algo.
+**typeof :** Operador que retorna o tipo de algo.
 Ex: `tipeof resposta`
 
-JSON.parse(): Lê o parametro e devolve um objeto JS. 
+**JSON.parse() :** Lê o parametro e devolve um objeto JS. 
 
-AJAX: Requisição com JS de modo assincrono , por que ele não para
+**AJAX :** Requisição com JS de modo assincrono , por que ele não para
 o fluxo da requisição. Devemos valida-lo para informar caso o ajax funcione.  
 
