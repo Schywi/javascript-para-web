@@ -33,10 +33,11 @@
 ### Funções aprendidas
 
 **.querySelector("tag") :** Seleciona uma tag dentro do html.
+
 **.querySelectorAll() :**  Seleciona todos os idenfiticadores com a classe dada, 
 retorna um array com os elementos do HTML. 
 
-**console.log(): ** Serve para visualizarmos o log de funções,variaveis da nossa aplicação.
+**console.log() :** Serve para visualizarmos o log de funções,variaveis da nossa aplicação.
 
 **.addEventListener :** Adiciona um "escutador" de eventos, que nos permite "capturar" uma ação do usuario e executar uma função quando essa ação for feita. 
 Ex: `.addEventListener("evento", function(){})`
@@ -53,6 +54,7 @@ Ex: `pacientes.appendChild(pacienteTr)`
 Ex: `form.reset()`
 
 **.document. :** Nós permite acessar o "mundo HTMl" apartir do "mundo Javascript".
+
 **.document.createElement():** Cria um elemento HTML como tags , apartir de um arquivo Javascript.
 
 **.innerHTML :** permite que você controle o html interno  de um elemento
@@ -77,6 +79,13 @@ Ex:
 
 **OBS:** Para se acessar o dono do evento (quem sofreu o evento) ; usa-se "this" : significa  "a quem o evento esta atrelado".
 
+### Diferença entre o "this" e o "event.target" 
+
+**this :** È o dono do evento.
+
+**event.target :** Mostra quem sofreu o evento.
+
+
 
 ### Event bublling (borbulhamento de eventos)
 
@@ -90,25 +99,21 @@ O elemento pai  também escuta a ação do elemento filho, por exemplo a tag <tb
 
 Ex: `event.target `: Diz quem de fato foi clicado.
 
-#### Diferença entre o "this" e o "event.target" 
-
-this :È o dono do evento.
-event.target: Mostra quem sofreu o evento.
-
 **.parentNode() :** Seleciona  o pai do elemento. 
 
 Ex: `event.target.parentNode()  ` : Seleciona o pai do alvo  que sofrerá a ação.
 
 **.callback:** È um nome especial dado a qualquer função que é executada em resposta a um evento qualquer.
 
-**.classList : Lista as classes.
+
+**.classList :** Lista as classes.
 
 **.classList.add() :** Adiciona uma classe,  que pode ser usada no CSS para estilização  por exemplo .
 
 **.setTimeout(function() {}, tempo(ms)):** O javascript  executa algo depois de certo tempo ,  ele "segura" a execução durante um certo tempo em milisegundos.
 
 
-## Noções de css
+## Noções de css:
 
 **opacity :** Adiciona opacidade.
 
@@ -117,7 +122,7 @@ Ex: `event.target.parentNode()  ` : Seleciona o pai do alvo  que sofrerá a aç�
 
 ### Filtrando os pacientes da tabela
 
-#### Noções de html
+#### Noções de html:
 
 **input :** Cria um espaço digitavel para se inserir informações.
 **label :**  Serve para dizer o nome do input (qual sua função/ para que serve).
@@ -128,20 +133,22 @@ sairá do input quando for digitado algo nele.
 
  **OBS :** Para capturar algo que o usuario digita usamos o input de dados: 
 
-#### Tipos de eventos estudados
+#### Tipos de eventos estudados:
 
 **click :** Evento ao clicar uma vez.
 
 **dblclick :** Evento ao dar dois cliques.
 
 **input :** Evento ao escrever algo , ativa para cada letra que vc digita.
+
 Ex: `.addEventListener("input", function() {})`
 
 **load :** Evento caracteristico do XHR(XMLH) que escuta quando a resposta foi carregada:
+
 Ex: `.addEventListener("load",function(){}) ` 
 
 
-#### Noções de array 
+#### Noções de array :
 
 array[i] : i = indice ou id do elemento do array
 
